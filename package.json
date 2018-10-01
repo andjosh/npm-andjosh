@@ -1,0 +1,24 @@
+{
+  "name": "npm-andjosh",
+  "version": "0.0.1",
+  "description": "A test",
+  "main": "index.js",
+  "bin": {
+    "npm andjosh": "./src/bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andjosh/npm-andjosh.git"
+  },
+  "author": "andjosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andjosh/npm-andjosh/issues"
+  },
+  "homepage": "https://github.com/andjosh/npm-andjosh#readme",
+  "dependencies": {
+  }
+}
