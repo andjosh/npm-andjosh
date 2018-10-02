@@ -1,10 +1,10 @@
 {
   "name": "npm-andjosh",
   "version": "0.0.1",
-  "description": "A test",
+  "description": "A plea for attention, a proof of vulnerability concept, and a game",
   "main": "index.js",
   "bin": {
-    "npm andjosh": "./src/bin/index.js"
+    "npm-andjosh": "./src/bin/index.js"
   },
   "scripts": {
     "postinstall": "./src/bin/postinstall.js",
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/andjosh/npm-andjosh#readme",
   "dependencies": {
-    "npmlog": "^4.1.2",
-    "prompt": "^1.0.0"
+    "npmlog": "^4.1.2"
   }
 }

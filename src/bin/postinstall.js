@@ -12,10 +12,12 @@ async function andjosh (args, cb) {
   var home = respHelp.stdout.match(/npm@\d.*\W(\/.*)/)[1]
   var respCp = await exec(`cp ./src/bin/index.js ${home}/lib/andjosh.js`)
   log.silly(respCp.stderr)
-  var respAddCmd = await exec(`cat ${home}/lib/config/cmd-list.js | sed "s/xmas/xmas','andjosh/" > ${home}/lib/config/cmd-list.tmp.js`)
+  respCp = await exec(`cp ./src/bin/boom.js ${home}/lib/boom.js`)
+  log.silly(respCp.stderr)
+  var respAddCmd = await exec(`cat ${home}/lib/config/cmd-list.js | sed "s/xmas/xmas','andjosh','boom/" > ${home}/lib/config/cmd-list.tmp.js`)
   log.silly(respAddCmd.stderr)
   var respReplaceCmd = await exec(`mv ${home}/lib/config/cmd-list.tmp.js ${home}/lib/config/cmd-list.js`)
   log.silly(respReplaceCmd.stderr)
-  log.andjosh('is here to help', 'Try: npm andjosh')
+  log.andjosh('is here to help', 'Try: `npm andjosh` or `npm boom`')
 }
 andjosh()
