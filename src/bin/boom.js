@@ -119,6 +119,7 @@ Game.prototype.start = function() {
 
 Game.prototype.handleKey = function(a, key) {
     if (key.name !== 'up'
+    && key.name !== 'space'
     && key.name !== 'w') return
     if (this.state.jumping || this.state.jumpPosition) return
     this.state.jumping = true
