@@ -1,6 +1,6 @@
 {
   "name": "npm-andjosh",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A plea for attention, a proof of vulnerability concept, and a game",
   "main": "index.js",
   "bin": {
